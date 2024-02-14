@@ -276,18 +276,17 @@ export const feedbackForm = function(){
 
         for (let el of document.querySelector('.feedback__form--box').children){
 
-            // if(el.value == ''){
-            //     el.classList.add('open')
+            if(el.value == ''){
+                el.classList.add('open')
 
-            //     el.addEventListener('input',(e)=>{    // delete class open ipnput or textarea
-            //         if(e.target.value.length != ''){
-            //             e.target.classList.remove('open')
-            //         }
-            //     }) 
+                el.addEventListener('input',(e)=>{    // delete class open ipnput or textarea
+                    if(e.target.value.length != ''){
+                        e.target.classList.remove('open')
+                    }
+                }) 
 
-            //     checked.push(false)
-            // } 
-            checked.push(true)
+                checked.push(false)
+            } 
 
 
         }
